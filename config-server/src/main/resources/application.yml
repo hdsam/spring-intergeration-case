@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+#          default-label: master
+          uri: file:///C:/Users/Yeo/configrepo/
+
+server:
+  port: 8888
+
+test:
+  username: hello
+
+
+
+

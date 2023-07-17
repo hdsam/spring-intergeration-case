@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: feign-demo
+
+server:
+  port: 8081
+  servlet:
+    context-path: /feign-demo/
+
+feign:
+  circuitbreaker:
+    enabled: true
+
+
+user-api-client:
+  name: user-info
+  url: https://jsonplaceholder.typicode.com/
+#  mock-url: https://c001cea6-8d53-4024-b248-3479a2ebd93c.mock.pstmn.io
+  x-api-key: PMAK-64982be76b55040031a74ec8-63d84313f24779e4bba4ffc928cb7e065b
+  username: test
+  password: 1234
+
+logging:
+  level:
+    com.hdsam.springclouddemo.feigndemo.feignclient.UserFeignClient: debug
+
+
+
+
+
