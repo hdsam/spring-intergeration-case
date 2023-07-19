@@ -22,9 +22,12 @@ public class HelloSecurityExplicitApplicationTests {
 	void indexWhenUnAuthenticatedThenRedirect() throws Exception {
 		// @formatter:off
 		this.mockMvc.perform(get("/"))
-				.andExpect(status().isUnauthorized());
+                .andExpect(status().isUnauthorized());
 		// @formatter:on
+
 	}
+
+
 
 	@Test
 	@WithMockUser
